@@ -30,21 +30,21 @@ public class RockPaperScissorsIntegrationTests {
     @Test
     public void testInvalidInputIsIgnoredByCommandLayer() {
         assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.WELCOME);
-        rps.commandLayer.processInput("some_invalid_input");  // arrange
-        boolean esitMi = rps.gameRuntimeContext.currentPhase.equals(GameRuntimeContext.Phase.GAMEPLAY);
-        assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.GAMEPLAY);
-        assertEquals(2,3);
+        rps.commandLayer.processInput("some_invalid_input");  // game should ask user to retry input
+        assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.WELCOME);
     }
 
     @Test
     public void testSuccessfulShiftIntoGameplayPhase() {
-        rps.commandLayer.processInput("x");  // arrange
+        assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.WELCOME);
+        rps.commandLayer.processInput("x");  // head into gameplay phase
         assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.GAMEPLAY);
     }
 
     @Test
     public void testSuccessfulShiftIntoTerminationPhase() {
-        rps.commandLayer.processInput("Q");  // arrange
+        assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.WELCOME);
+        rps.commandLayer.processInput("Q");  // head into termination phase
         assertEquals(rps.gameRuntimeContext.currentPhase, GameRuntimeContext.Phase.TERMINATEPROGRAM);
     }
 

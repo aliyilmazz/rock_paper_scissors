@@ -63,12 +63,12 @@ careers@imc:~/rock_paper_scissors$
 
 [1] install project dependencies, compile the code 
 
-```aidl
+```
 careers@imc:~/rock_paper_scissors$ mvn clean install -U
 ```
 
 [2] run the code
-```aidl
+```
 careers@imc:~/rock_paper_scissors$ mvn exec:java -Dexec.mainClass="Main"
 ```
 

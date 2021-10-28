@@ -36,7 +36,7 @@ M. Ali Yilmaz
 The repository contains rock paper scissors game.
 
 
-![Alt text](./myrecord.svg)
+![Alt text](./gamedemogif.svg)
 
 
 # Dependencies

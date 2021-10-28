@@ -36,6 +36,8 @@ M. Ali Yilmaz
 The repository contains rock paper scissors game.
 
 
+![Alt text](./myrecord.svg)
+
 
 # Dependencies
 
@@ -78,7 +80,6 @@ If you play in a small terminal, it's very likely that you will see bargled outp
 
 
 1. Provided that you satisfy #0, all instructions can be found during the gameplay on UI. Available keybinds are displayed in every phase of the game.
-
 
 
 # Developer's Read

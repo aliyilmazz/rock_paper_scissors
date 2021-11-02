@@ -52,23 +52,23 @@ Throughout the project, I used built-in java libraries with only one exception: 
 [0] unzip repository (or clone from my public github page)
 
 ```
-careers@imc:~/$ git clone git@github.com:aliyilmazz/rock_paper_scissors.git
-careers@imc:~/$ OR
-careers@imc:~/$ unzip rock_paper_scissors.zip
-careers@imc:~/$ cd rock_paper_scissors
-careers@imc:~/rock_paper_scissors$
+ali@github:~/$ git clone git@github.com:aliyilmazz/rock_paper_scissors.git
+ali@github:~/$ OR
+ali@github:~/$ unzip rock_paper_scissors.zip
+ali@github:~/$ cd rock_paper_scissors
+ali@github:~/rock_paper_scissors$
 ```
 
 
 [1] install project dependencies, compile the code 
 
 ```
-careers@imc:~/rock_paper_scissors$ mvn clean install -U
+ali@github:~/rock_paper_scissors$ mvn clean install -U
 ```
 
 [2] run the code
 ```
-careers@imc:~/rock_paper_scissors$ mvn exec:java -Dexec.mainClass="Main"
+ali@github:~/rock_paper_scissors$ mvn exec:java -Dexec.mainClass="Main"
 ```
 
 
